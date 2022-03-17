@@ -114,9 +114,11 @@ main {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-30px);
   }
+
   60% {
     transform: translateY(-15px);
   }
@@ -289,11 +291,7 @@ main {
 #about-contact-grid {
   display: grid;
   grid-template-rows: 3fr repeat(4, 1fr);
-  grid-template-columns: repeat (7, 1fr);
-  grid-template-areas:
-    "about about about"
-    "space space space"
-    "logo1 logo2 logo3";
+  grid-template-columns: repeat(7, 1fr);
   height: 75%;
   width: 80%;
   text-align: justify;
@@ -339,7 +337,6 @@ main {
   grid-row-start: 5;
   grid-row-end: 6;
 }
-
 
 #git-hub-logo {
   height: 3rem;
@@ -394,7 +391,6 @@ to {
           transform: translateX(-100%);
   }
 }
-
 
 @media only screen and (max-width: 700px) {
 
