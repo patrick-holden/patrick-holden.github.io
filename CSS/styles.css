@@ -47,7 +47,7 @@ nav ul li {
 nav ul li:hover {
   text-decoration: none;
   padding: 1%;
-  border: 2px solid #5DCFB1;
+  border: 2px solid #5dcfb1;
 }
 
 nav ul li a {
@@ -59,7 +59,7 @@ nav ul li a {
 #cv {
   margin-right: 0vw;
   padding: 1%;
-  border: 2px solid #5DCFB1;
+  border: 2px solid #5dcfb1;
   text-align: center;
 }
 
@@ -81,6 +81,10 @@ main {
   
 .landing {
   height: 125vh;
+}
+
+.pink {
+  color: #c96557;
 }
 
 .ident {
@@ -163,7 +167,7 @@ main {
 }
 
 .content .content-overlay {
-  background: #04AA6D;
+  background: #04aa6d;
   position: absolute;
   height: 99%;
   width: 100%;
@@ -266,7 +270,7 @@ main {
   height: 100vh;
   padding-top: 0;
   margin-left: 50vw;
-  background: #5DCFB1;
+  background: #5dcfb1;
   background-position: left 7.5%;
 }
 
@@ -278,8 +282,8 @@ main {
   padding-bottom: 2.5rem;
   padding-top: 1.5rem;
   background: #ffffff;
-  border-top: 2px solid #5DCFB1;
-  border-left: 2px solid #5DCFB1;
+  border-top: 2px solid #5dcfb1;
+  border-left: 2px solid #5dcfb1;
 }
 
 #about-contact-grid {
@@ -354,10 +358,10 @@ footer {
   bottom: 0;
   padding-top: 0.25rem;
   width: 100vw;
-  height: 4rem;
+  height: 3rem;
   z-index: 999;
   background: #ffffff;
-  border-top: 2px solid #5DCFB1;
+  border-top: 2px solid #5dcfb1;
   overflow-x: hidden;
 }
 
@@ -442,7 +446,7 @@ to {
 
   .updates {
     width: 87.5vw;
-    height: 95vh;
+    height: 100vh;
   }
 
   #about-contact {
