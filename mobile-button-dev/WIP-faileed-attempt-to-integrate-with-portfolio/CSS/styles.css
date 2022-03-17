@@ -1,0 +1,72 @@
+
+
+
+.hamburger, .close {
+    display: initial;
+    border: none;
+    /* position absolute position the icons relative to the body because they have no position relative parents*/
+    position: absolute;
+    top: 0.25rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .hamburger {
+    background: white;
+  }
+  
+  .close {
+    background: #5DCFB1;
+    position: absolute;
+    top: 90vh;
+    right: 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .hamburger img, .close img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #hidden-nav-bar {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    list-style: none;
+    background: #5DCFB1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    gap: 2.5rem;
+    align-items: center;
+    padding-bottom: 7.5rem;
+    transform: translateY(-100vh);
+    transition: transform 0.5s ease;
+  }
+  
+  .hidden-nav-bar:target {
+    transform: translateY(0vh);
+  }
+
+  #hidden-nav-bar li a {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* remove default underline and add our own with padding and border bottom */
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+  }
+  
+  #hidden-nav-bar li a:hover, li a:focus {
+    /* show border bottom */
+    border-bottom: 1px solid white;
+  }
