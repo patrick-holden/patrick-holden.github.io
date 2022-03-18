@@ -25,7 +25,7 @@ nav {
 
 nav ul {
   list-style: none;
-  height: 4.25rem;
+  height: 4.4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -36,7 +36,7 @@ nav ul {
 
 #logo {
   margin: 0rem;
-  height: 2rem;
+  height: 1.25rem;
 }   
 
 nav ul li {
@@ -431,6 +431,11 @@ to {
     width: 100vw;
   }
   
+  .content-details {
+    opacity: 1;
+    top: 50%;
+  }
+
   .content-details h3 {
     font-size: 1rem;
     padding-top: 4.5rem;
@@ -440,6 +445,14 @@ to {
     font-size: 0.75rem;
   }
 
+  .content .content-overlay {
+    opacity: 1;
+  }
+
+  .content:hover .content-overlay {
+    opacity: 1;
+  }
+  
   .updates {
     width: 87.5vw;
     height: 100vh;
