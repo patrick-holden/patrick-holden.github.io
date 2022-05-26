@@ -281,7 +281,7 @@ main {
 #coding-lang-wrapper i {
   /*border: 1px solid red;*/
   margin: 5vw;
-  font-size: 10rem;
+  font-size: 1000%;
   color: var(--bkgrnd);
 }
 
@@ -458,7 +458,7 @@ footer p {
 
   #coding-lang-wrapper i {
     margin: 2.5vw;
-    font-size: 6rem;
+    font-size: 1000%;
   }
 
   .final-panel {
