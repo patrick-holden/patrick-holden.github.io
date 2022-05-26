@@ -493,7 +493,7 @@ footer p {
   }
 
   .project .project-overlay {
-    opacity: 1;
+    opacity: 0.8;
   }
 
   .project:hover .project-overlay {
