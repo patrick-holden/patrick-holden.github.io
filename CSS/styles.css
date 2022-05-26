@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&family=Lora&display=swap");
 
 :root {
-  /*--bkgrnd: #ffffff;*/
-  /*--1stpanel: #FAAA91;*/
-  /*--2ndpanel: #55bea1;*/
-  /*--mainborders: #c96557;*/
-  /*--maintxt: #074963;*/
-  /*--smltext: #000000;*/
   --bkgrnd: #000000;
   --1stpanel: #ffc11f;
   --2ndpanel: #12879f;
@@ -40,7 +34,7 @@ nav {
 
 nav ul {
   list-style: none;
-  height: 4.4rem;
+  height: 9vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -118,6 +112,7 @@ main {
   margin-left: -20px;
   width: 40px;
   height: 40px;
+  filter: invert(99%) sepia(3%) saturate(300%) hue-rotate(308deg) brightness(106%) contrast(100%);
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI1MTIiIGlkPSJzdmcyIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzIGlkPSJkZWZzNCIvPjxnIGlkPSJsYXllcjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTU0MC4zNjIyKSI+PHBhdGggZD0ibSAxMjcuNDA2MjUsNjU3Ljc4MTI1IGMgLTQuOTg1MywwLjA3ODQgLTkuOTEwNzcsMi4xNjMwOCAtMTMuNDM3NSw1LjY4NzUgbCAtNTUsNTUgYyAtMy42MDA1NjUsMy41OTkyNyAtNS42OTY4ODMsOC42NTg5NSAtNS42OTY4ODMsMTMuNzUgMCw1LjA5MTA1IDIuMDk2MzE4LDEwLjE1MDczIDUuNjk2ODgzLDEzLjc1IEwgMjQyLjI1LDkyOS4yNSBjIDMuNTk5MjcsMy42MDA1NiA4LjY1ODk1LDUuNjk2ODggMTMuNzUsNS42OTY4OCA1LjA5MTA1LDAgMTAuMTUwNzMsLTIuMDk2MzIgMTMuNzUsLTUuNjk2ODggTCA0NTMuMDMxMjUsNzQ1Ljk2ODc1IGMgMy42MDA1NiwtMy41OTkyNyA1LjY5Njg4LC04LjY1ODk1IDUuNjk2ODgsLTEzLjc1IDAsLTUuMDkxMDUgLTIuMDk2MzIsLTEwLjE1MDczIC01LjY5Njg4LC0xMy43NSBsIC01NSwtNTUgYyAtMy41OTgxNSwtMy41OTEyNyAtOC42NTA2OCwtNS42ODEyNyAtMTMuNzM0MzgsLTUuNjgxMjcgLTUuMDgzNjksMCAtMTAuMTM2MjIsMi4wOSAtMTMuNzM0MzcsNS42ODEyNyBMIDI1Niw3NzguMDMxMjUgMTQxLjQzNzUsNjYzLjQ2ODc1IGMgLTMuNjY2NzgsLTMuNjY0MjMgLTguODQ4MDEsLTUuNzY0NDIgLTE0LjAzMTI1LC01LjY4NzUgeiIgaWQ9InBhdGgzNzY2LTEiIHN0eWxlPSJmb250LXNpemU6bWVkaXVtO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO2xpbmUtaGVpZ2h0Om5vcm1hbDtsZXR0ZXItc3BhY2luZzpub3JtYWw7d29yZC1zcGFjaW5nOm5vcm1hbDt0ZXh0LXRyYW5zZm9ybTpub25lO2RpcmVjdGlvbjpsdHI7YmxvY2stcHJvZ3Jlc3Npb246dGI7d3JpdGluZy1tb2RlOmxyLXRiO3RleHQtYW5jaG9yOnN0YXJ0O2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO2NvbG9yOiMwMDAwMDA7ZmlsbDojMjIyMjIyO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDozOC44ODAwMDEwNzttYXJrZXI6bm9uZTt2aXNpYmlsaXR5OnZpc2libGU7ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTtlbmFibGUtYmFja2dyb3VuZDphY2N1bXVsYXRlO2ZvbnQtZmFtaWx5OlNhbnM7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpTYW5zIi8+PC9nPjwvc3ZnPg==);
   background-size: contain;
 }
@@ -137,6 +132,7 @@ main {
     transform: translateY(-15px);
   }
 }
+
 .intro {
   position: sticky;
   top: 40vh;
@@ -152,7 +148,7 @@ main {
   height: 85vh;
   width: 95vw;
   margin-left: 5vw;
-  padding: 0vh 5vw 10vh 0vw;
+  padding: 0;
   overflow: auto;
   background-color: var(--bkgrnd);
   border-top: 2px solid var(--mainborders);
@@ -168,28 +164,26 @@ main {
 
 #portfolio-flex {
   position: relative;
-  margin-top: 1rem;
-  margin-left: 7.5%;
+  margin-left: 2.5%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: start;
-  gap: 2.5rem;
+  /*gap: 1rem;*/
+  /*overflow-y: scroll;*/
+  /*overflow-x: auto;*/
 }
 
 .project {
   position: relative;
-  width: 45%;
-  margin: auto;
+  width: 35%;
+  margin: 0 5vw;
   overflow: hidden;
 }
 
 .project .project-overlay {
   background: var(--2ndpanel);
   position: absolute;
-  height: 99%;
-  width: 100%;
   left: 0;
-  top: 0%;
+  top: 0;
   bottom: 0;
   right: 0;
   opacity: 0;
@@ -208,12 +202,11 @@ main {
 
 .project-details {
   position: absolute;
-  text-align: center;
   padding-left: 1em;
   padding-right: 1em;
   width: 100%;
-  top: 50%;
-  left: 50%;
+  /*top: 50%;*/
+  /*left: 50%;*/
   opacity: 0;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -224,7 +217,7 @@ main {
 }
 
 .project:hover .project-details {
-  top: 50%;
+  top: 0%;
   left: 50%;
   opacity: 1;
 }
@@ -235,7 +228,6 @@ main {
   letter-spacing: 0.1rem;
   margin-bottom: 0rem;
   padding-top: 7.5rem;
-  padding-bottom: 0rem;
   text-align: left;
   text-transform: uppercase;
 }
@@ -282,7 +274,6 @@ main {
   margin-right: 66%;
 }
 
-
 .final-panel {
   position: sticky;
   top: 0px;
@@ -298,7 +289,6 @@ main {
 .final-panel h2 {
   height: 2.5rem;
   text-align: left;
-  margin-left: 0vw;
   padding-left: 5vw;
   padding-bottom: 2.5rem;
   padding-top: 1.5rem;
@@ -307,86 +297,25 @@ main {
   border-top: 2px solid var(--2ndpanel);
 }
 
-#final-text {
-  position: relative;
-  margin-top: 1rem;
-  margin-left: 7.5%;
-  margin-right: 66%;
+#final-panel-flex {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 15%;
+  height: 85%;
+  width: 75%;
+  border: 1px solid white;
+  justify-content: space-around;
 }
 
-
-#about-contact {
-  position: sticky;
-  top: 2.5px;
-  width: 50vw;
-  height: 85vh;
-  padding-top: 0;
-  padding-right: 0;
-  margin-right: 0%;
-  margin-left: 50vw;
-  background-position: left 7.5%;
+.final-panel-text {
+  padding: 5%;
 }
 
-#about-contact h2 {
-  height: 2.5rem;
-  text-align: left;
-  margin-left: 0vw;
-  padding-left: 5vw;
-  padding-bottom: 2.5rem;
-  padding-top: 1.5rem;
-  background: #ffffff;
-  border-top: 2px solid #55bea1;
-  border-left: 2px solid #55bea1;
-}
-
-#about-contact-grid {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(7, 1fr);
-  height: 75%;
+.logo-flex {
+  display: flex;
+  flex-flow: row nowrap;
   width: 100%;
-  text-align: justify;
-  padding-left: 7.5%;
-  padding-right: 7.5%;
-  color: var(--maintxt);
-  font-size: 1rem;
-  font-family: "Averia Serif Libre";
-  font-weight: 700;
-  line-height: 1.5;
-  opacity: 0.7;
-}
-
-
-.about-grid {
-  grid-column-start: 2;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  padding-top: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  border: 1px solid #000000;
-}
-
-.github-grid {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 6;
-}
-
-.linkedin-grid {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 5;
-  grid-row-end: 6;
-}
-
-.email-grid {
-  grid-column-start: 6;
-  grid-column-end: 7;
-  grid-row-start: 5;
-  grid-row-end: 6;
+  justify-content: space-evenly;
 }
 
 #git-hub-logo {
@@ -406,7 +335,7 @@ footer {
   bottom: 0;
   padding-top: 0.25rem;
   width: 100vw;
-  height: 3rem;
+  height: 6vh;
   z-index: 999;
   background: var(--bkgrnd);
   border-top: 2px solid var(--2ndpanel);
@@ -442,8 +371,11 @@ footer p {
     transform: translateX(-100%);
   }
 }
+
+
 @media only screen and (max-width: 800px) {
   .vertical-scroller {
+    /*overflow-x: auto;*/
     scroll-snap-type: y proximity;
   }
 
@@ -452,7 +384,7 @@ footer p {
   }
 
   .landing {
-    height: 150vh;
+    height: 125vh;
   }
 
   .arrow {
@@ -466,21 +398,28 @@ footer p {
   }
 
   #portfolio-panel {
-    padding-bottom: 25%;
+    padding-bottom: 15%;
+    width: 95vw;
   }
 
   #portfolio-flex {
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    width: 100%;
-    margin-left: 0;
-    /*padding-right: 15vw;*/
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+    gap: 2.5rem;
+    width: 350vw;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
   }
 
+  .project {
+    position: relative;
+    /*width: 80vw;*/
+  }
 
   .project-details {
     opacity: 1;
-    top: 50%;
+    top: 0;
+    left: 50%;
   }
 
   .project-details h3 {
@@ -501,31 +440,13 @@ footer p {
   }
 
   .updates {
-    width: 87.5vw;
+    width: 90vw;
+    margin-left: 10vw;
     height: 85vh;
   }
 
-  #about-contact {
+  .final-panel {
     width: 85vw;
     margin-left: 15vw;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .project {
-    width: 45%;
-  }
-
-  #about-contact-grid {
-background: var(--2ndpanel);
-    height: 85vh;
-  }
-  /*  width: 90%;*/
-  /*  padding-top: 3rem;*/
-  /*}*/
-
-  .about-grid {
-    /*padding-top: 1.5rem;*/
-    padding: 0;
-    margin-bottom: 0rem;
   }
 }
