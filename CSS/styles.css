@@ -178,7 +178,7 @@ main {
   padding-bottom: 10%;
   margin: 0 5vw;
   overflow: hidden;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 
 .project .project-overlay {
@@ -192,7 +192,7 @@ main {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
-  border: 2px solid green;
+  /*border: 2px solid green;*/
 }
 
 .project:hover .project-overlay {
@@ -215,14 +215,14 @@ main {
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-  border: 2px solid white;
+  /*border: 2px solid white;*/
 }
 
 .project:hover .project-details {
   top: 0;
   left: 50%;
   opacity: 1;
-  border: 2px solid yellow;
+  /*border: 2px solid yellow;*/
 }
 
 .project-details h3 {
@@ -233,7 +233,7 @@ main {
   padding-top: 7.5rem;
   text-align: left;
   text-transform: uppercase;
-  border: 2px solid blue;
+  /*border: 2px solid blue;*/
 }
 
 .project-details p {
