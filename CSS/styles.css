@@ -167,7 +167,7 @@ main {
   margin-left: 2.5%;
   display: flex;
   flex-flow: row wrap;
-  /*gap: 1rem;*/
+  gap: 1rem;
   /*overflow-y: scroll;*/
   /*overflow-x: auto;*/
 }
@@ -466,3 +466,4 @@ footer p {
     margin-left: 15vw;
   }
 }
+
