@@ -59,7 +59,7 @@ function showText2(){
 
 function hide2(){
   if (window.innerWidth > 800) {
-    document.getElementById("hover-wine").innerHTML = "";
+    document.getElementById("hover-carpe").innerHTML = "";
   }
 }
 
@@ -88,7 +88,7 @@ function showText3(){
 
 function hide3(){
   if (window.innerWidth > 800) {
-    document.getElementById("hover-wine").innerHTML = "";
+    document.getElementById("hover-scran").innerHTML = "";
   }
 }
 
@@ -117,6 +117,6 @@ function showText4(){
 
 function hide4(){
   if (window.innerWidth > 800) {
-    document.getElementById("hover-wine").innerHTML = "";
+    document.getElementById("hover-wordrunner").innerHTML = "";
   }
 }
