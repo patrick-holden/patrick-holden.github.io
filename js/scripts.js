@@ -29,7 +29,9 @@ function showText1(){
 }
 
 function hide1(){
-  document.getElementById("hover-wine").innerHTML="";
+  if (window.innerWidth > 800) {
+    document.getElementById("hover-wine").innerHTML = "";
+  }
 }
 
 function showText2(){
@@ -56,7 +58,9 @@ function showText2(){
 }
 
 function hide2(){
-  document.getElementById("hover-carpe").innerHTML="";
+  if (window.innerWidth > 800) {
+    document.getElementById("hover-wine").innerHTML = "";
+  }
 }
 
 function showText3(){
@@ -83,7 +87,9 @@ function showText3(){
 }
 
 function hide3(){
-  document.getElementById("hover-scran").innerHTML="";
+  if (window.innerWidth > 800) {
+    document.getElementById("hover-wine").innerHTML = "";
+  }
 }
 
 function showText4(){
@@ -110,5 +116,7 @@ function showText4(){
 }
 
 function hide4(){
-  document.getElementById("hover-wordrunner").innerHTML="";
+  if (window.innerWidth > 800) {
+    document.getElementById("hover-wine").innerHTML = "";
+  }
 }
