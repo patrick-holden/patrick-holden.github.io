@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&family=Lora&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Source+Sans+Pro:wght@400;600&display=swap');
 
 :root {
   --bkgrnd: #000000;
@@ -17,7 +17,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   width: 100vw;
-  font-family: "Lora";
+  font-family: "Lora", serif;
   color: var(--maintxt);
 }
 
@@ -41,11 +41,11 @@ nav ul {
   align-items: center;
   background: var(--bkgrnd);
   border-bottom: 1px solid var(--mainborders);
-  margin: 0px;
+  margin: 0;
 }
 
 #logo {
-  margin: 0rem;
+  margin: 0;
   height: 1.25rem;
 }
 
@@ -67,7 +67,7 @@ nav ul li a {
 }
 
 #cv {
-  margin-right: 0vw;
+  margin-right: 0;
   padding: 1%;
   border: 2px solid var(--2ndpanel);
   text-align: center;
@@ -150,7 +150,7 @@ main {
 #portfolio-panel {
   position: sticky;
   top: 0;
-  height: 87.5vh;
+  height: 85vh;
   width: 95vw;
   margin-left: 5vw;
   padding-bottom: 2.5vh;
@@ -201,7 +201,7 @@ main {
 .text-flex {
   margin-left: 2rem;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   height: 100%;
   justify-content: space-around;
 }
@@ -224,91 +224,17 @@ main {
 }
 
 .project-competencies {
+  color: var(--bkgrnd);
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.project-competencies-list {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   margin-left: -3rem;
-  color: var(--bkgrnd);
-  font-weight: 800;
 }
-
-
-
-
-
-
-
-
-
-
-
-/*.project .project-overlay {*/
-/*  background: var(--2ndpanel);*/
-/*  position: absolute;*/
-/*  left: 0;*/
-/*  top: 0;*/
-/*  bottom: 0;*/
-/*  right: 0;*/
-/*  opacity: 0;*/
-/*  -webkit-transition: all 0.4s ease-in-out 0s;*/
-/*  -moz-transition: all 0.4s ease-in-out 0s;*/
-/*  transition: all 0.4s ease-in-out 0s;*/
-/*  border: 2px solid green;*/
-/*}*/
-
-/*.project:hover .project-overlay {*/
-/*  opacity: 0.8;*/
-/*}*/
-
-
-/*.project-details {*/
-/*  position: absolute;*/
-/*  display: flex;*/
-/*  flex-flow: column wrap;*/
-/*  opacity: 100%;*/
-/*}*/
-/*  position: absolute;*/
-/*  padding-left: 1em;*/
-/*  padding-right: 1em;*/
-/*  width: 100%;*/
-/*  opacity: 0;*/
-/*  -webkit-transform: translate(-50%, -50%);*/
-/*  -moz-transform: translate(-50%, -50%);*/
-/*  transform: translate(-50%, -50%);*/
-/*  -webkit-transition: all 0.3s ease-in-out 0s;*/
-/*  -moz-transition: all 0.3s ease-in-out 0s;*/
-/*  transition: all 0.3s ease-in-out 0s;*/
-/*  !*border: 2px solid white;*!*/
-/*}*/
-
-/*.project:hover .project-details {*/
-/*  top: 0;*/
-/*  left: 50%;*/
-/*  opacity: 1;*/
-/*  !*border: 2px solid yellow;*!*/
-/*}*/
-
-/*.project-details h3 {*/
-/*  color: var(--1stpanel);*/
-/*  font-weight: 500;*/
-/*  letter-spacing: 0.1rem;*/
-/*  margin-bottom: 0rem;*/
-/*  padding-top: 7.5rem;*/
-/*  text-align: left;*/
-/*  text-transform: uppercase;*/
-/*  !*border: 2px solid blue;*!*/
-/*}*/
-
-/*.project-details p {*/
-/*  color: var(--maintxt);*/
-/*  font-size: 1rem;*/
-/*  text-align: left;*/
-/*  margin-top: 0.1rem;*/
-/*}*/
-
-/*.fadeIn-bottom {*/
-/*  top: 80%;*/
-/*}*/
 
 .coding-lang {
   position: sticky;
@@ -342,19 +268,17 @@ main {
   align-items: center;
   margin-top: 1rem;
   margin-left: 5%;
-  /*padding-left: 5vw;*/
 }
 
 #coding-lang-wrapper i {
-  /*border: 1px solid red;*/
   margin: 5vw;
-  font-size: 750%;
+  font-size: 800%;
   color: var(--bkgrnd);
 }
 
 .final-panel {
   position: sticky;
-  top: 0px;
+  top: 0;
   width: 50vw;
   height: 85vh;
   margin-left: 50vw;
@@ -450,10 +374,8 @@ footer p {
   }
 }
 
-
 @media only screen and (max-width: 800px) {
   .vertical-scroller {
-    /*overflow-x: auto;*/
     scroll-snap-type: y proximity;
   }
 
@@ -477,44 +399,35 @@ footer p {
 
   #portfolio-panel {
     width: 95vw;
-    padding-bottom: 25vh;
   }
 
   #portfolio-flex {
     margin-top: 5rem;
-    margin-left: 2.5rem;
+    margin-left: 0.5rem;
     gap: 2.5rem;
-    width: 350vw;
+    width: 400vw;
     flex-flow: row nowrap;
     overflow-x: scroll;
   }
 
   .project {
     position: relative;
-    /*width: 80vw;*/
+    height: 60vh;
   }
 
-  .project-details {
-    opacity: 1;
-    top: 0;
-    left: 50%;
+  .project-image {
+    border: 2px solid var(--smltext);
   }
 
-  .project-details h3 {
-    font-size: 1rem;
-    padding-top: 4.5rem;
+  .overlay {
+    margin: 30% 2.5% 0;
+    opacity: 0.85;
+    border: 2px solid var(--maintxt);
   }
 
-  .project-details p {
-    font-size: 0.75rem;
-  }
-
-  .project .project-overlay {
-    opacity: 0.8;
-  }
-
-  .project:hover .project-overlay {
-    opacity: 1;
+  .text-flex {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .coding-lang {
@@ -525,7 +438,7 @@ footer p {
 
   #coding-lang-wrapper i {
     margin: 2.5vw;
-    font-size: 800%;
+    font-size: 700%;
   }
 
   .final-panel {
@@ -533,4 +446,3 @@ footer p {
     margin-left: 15vw;
   }
 }
-
