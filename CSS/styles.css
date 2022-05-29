@@ -63,7 +63,7 @@ nav ul li:hover {
 nav ul li a {
   text-decoration: none;
   color: var(--smltext);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #cv {
@@ -209,6 +209,7 @@ main {
 .project-title {
   color: var(--1stpanel);
   font-weight: 500;
+  font-size: 1.25rem;
   letter-spacing: 0.1rem;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -221,11 +222,12 @@ main {
 
 .project-desc {
   color: var(--maintxt);
+  font-family: sans-serif;
 }
 
 .project-competencies {
   color: var(--bkgrnd);
-  font-weight: 400;
+  font-weight: 500;
   font-family: sans-serif;
 }
 
@@ -322,6 +324,10 @@ main {
 
 #git-hub-logo {
   height: 3rem;
+}
+
+.git-hub-logo-sml {
+  height: 1.5rem;
 }
 
 #linked-in-logo {

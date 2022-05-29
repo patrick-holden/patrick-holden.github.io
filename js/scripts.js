@@ -12,7 +12,10 @@ function showText1(){
       '<div class="overlay">' +
       '<div class="text-flex">' +
       '<div>' +
-      '<h3 class="project-title">\'VinoVero\'</h3>' +
+      '<span class="project-title">\'VinoVero\'</span> - ' +
+        '<a href="https://github.com/patrick-holden/collection" target="_blank">' +
+          '<img src="./Images/GitHub-Mark-Light-120px-plus.png" class="git-hub-logo-sml" alt="A link to my projects listed GitHub">' +
+        '</a>' +
       '<p class="project-text">A Wine Collection App Built With PHP</p>' +
       '</div>' +
       '<div>' +
@@ -39,11 +42,14 @@ function showText2(){
     '<div class="overlay">' +
     '<div class="text-flex">' +
     '<div>' +
-    '<h3 class="project-title">\'CarPe - Diem\'</h3>' +
+    '<span class="project-title">\'CarPe - Diem\'</span> - ' +
+      '<a href="https://github.com/iO-Academy/2022-mar-carcollection" target="_blank">' +
+        '<img src="./Images/GitHub-Mark-Light-120px-plus.png" class="git-hub-logo-sml" alt="A link to my projects listed GitHub">' +
+      '</a>' +
     '<p class="project-text">An OOP Car Collection App</p>' +
     '</div>' +
     '<div>' +
-    '<p class="project-desc">An object-oriented project, including hydrator classes, the singleton pattern, and a Data Access Layer, I added a sanitised, validated search function, allowing partial searches, and protecting against malicious injection on both the front-end (via Regex) and back (with prepared statements).</p>' +
+    '<p class="project-desc">An object-oriented project, including hydrator classes, the singleton pattern, and a Data Access Layer, I added a sanitised, validated search function, allowing partial searches, and protecting against malicious injection via both Regex prepared statements.</p>' +
     '</div>' +
     '<div class="project-competencies">' +
     '<h4>Competencies:</h4>' +
@@ -68,7 +74,10 @@ function showText3(){
     '<div class="overlay">' +
     '<div class="text-flex">' +
     '<div>' +
-    '<h3 class="project-title">\'ScranMaster\'</h3>' +
+    '<span class="project-title">\'ScranMaster\'</span> - ' +
+      '<a href="https://github.com/iO-Academy/2022-mar-scranmaster" target="_blank">' +
+        '<img src="./Images/GitHub-Mark-Light-120px-plus.png" class="git-hub-logo-sml" alt="A link to my projects listed GitHub">' +
+      '</a>' +
     '<p class="project-text">A Food Delivery App (react.js)</p>' +
     '</div>' +
     '<div>' +
@@ -97,7 +106,10 @@ function showText4(){
     '<div class="overlay">' +
     '<div class="text-flex">' +
     '<div>' +
-    '<h3 class="project-title">\'WordRunner\'</h3>' +
+    '<span class="project-title">\'WordRunner\'</span> - ' +
+      '<a href src="https://github.com/iO-Academy/2022-mar-word-finder" target="_blank">' +
+        '<img src="./Images/GitHub-Mark-Light-120px-plus.png" class="git-hub-logo-sml" alt="A link to my projects listed GitHub">' +
+      '</a>' +
     '<p class="project-text">JavaScript Wordguessing Game</p>' +
     '</div>' +
     '<div>' +
