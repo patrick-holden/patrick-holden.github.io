@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&family=Lora&display=swap");
 
 :root {
   --bkgrnd: #000000;
@@ -180,13 +181,13 @@ main {
   display: flex;
   flex-flow: row wrap;
   gap: 2.5rem;
-
 }
 
 .project {
   position: relative;
   width: 45%;
   overflow: hidden;
+  /*border: 2px solid red;*/
 }
 
 .project-image {
@@ -278,7 +279,6 @@ main {
   margin-left: 10vw;
   background: var(--1stpanel);
   opacity: .94;
-  /*background-position: left 7.5%;*/
   border-left: 2px solid var(--mainborders);
 }
 
@@ -453,7 +453,6 @@ footer p {
 
 }
 
-
 @media only screen and (max-width: 800px) {
   .vertical-scroller {
     scroll-snap-type: y proximity;
@@ -596,4 +595,3 @@ footer p {
     margin-left: 15vw;
   }
 }
-
