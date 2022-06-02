@@ -11,14 +11,21 @@
 
 html {
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 body {
   margin: 0;
-  overflow-x: hidden;
-  width: 100vw;
   font-family: "Lora", serif;
   color: var(--maintxt);
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  /* overflow-y: scroll; */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 *, *::before, *::after {
@@ -151,7 +158,7 @@ main {
   position: sticky;
   top: 0;
   height: 85vh;
-  width: 95vw;
+  width: 94vw;
   margin-left: 5vw;
   padding-bottom: 2.5vh;
   overflow: auto;
@@ -169,15 +176,17 @@ main {
 
 #portfolio-flex {
   position: relative;
-  margin-left: 5%;
+  margin-left: 6%;
   display: flex;
   flex-flow: row wrap;
   gap: 2.5rem;
+
 }
 
 .project {
   position: relative;
-  width: 35%;
+  width: 45%;
+  overflow: hidden;
 }
 
 .project-image {
@@ -204,6 +213,7 @@ main {
   flex-flow: column nowrap;
   height: 100%;
   justify-content: space-around;
+  /*font-family: sans-serif;*/
 }
 
 .project-title {
@@ -222,13 +232,13 @@ main {
 
 .project-desc {
   color: var(--maintxt);
-  font-family: sans-serif;
 }
 
 .project-competencies {
+  line-height:0.75rem;
   color: var(--bkgrnd);
   font-weight: 500;
-  font-family: sans-serif;
+  margin-right: 2rem;
 }
 
 .project-competencies-list {
@@ -236,17 +246,39 @@ main {
   flex-flow: row nowrap;
   justify-content: space-around;
   margin-left: -3rem;
+  list-style-type: none;
+}
+
+.github-live-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.github-live-logo-sml {
+  height: 1.5rem;
+}
+
+.live-site-logo-sml {
+  height: 1.5rem;
+  filter: invert(100%)
+          sepia(150%)
+          saturate(0%)
+          hue-rotate(232deg)
+          brightness(200%)
+          contrast(102%);
 }
 
 .coding-lang {
   position: sticky;
   top: 0;
-  width: 90vw;
+  width: 89vw;
   height: 85vh;
   margin-left: 10vw;
   background: var(--1stpanel);
   opacity: .94;
-  background-position: left 7.5%;
+  /*background-position: left 7.5%;*/
   border-left: 2px solid var(--mainborders);
 }
 
@@ -266,7 +298,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 75vw;
+  width: 80vw;
   align-items: center;
   margin-top: 1rem;
   margin-left: 5%;
@@ -281,7 +313,7 @@ main {
 .final-panel {
   position: sticky;
   top: 0;
-  width: 50vw;
+  width: 49vw;
   height: 85vh;
   margin-left: 50vw;
   background: var(--2ndpanel);
@@ -324,10 +356,6 @@ main {
 
 #git-hub-logo {
   height: 3rem;
-}
-
-.git-hub-logo-sml {
-  height: 1.5rem;
 }
 
 #linked-in-logo {
@@ -379,6 +407,52 @@ footer p {
     transform: translateX(-100%);
   }
 }
+
+@media only screen and (max-width: 1400px) {
+  .project {
+    position: relative;
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #portfolio-panel {
+    width: 95vw;
+  }
+
+  #portfolio-flex {
+    margin-top: 5%;
+    margin-left: 0.5rem;
+    gap: 2.5rem;
+    width: 300vw;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+  }
+
+  .project {
+    position: relative;
+    height: 60vh;
+  }
+
+  .project-image {
+    border: 2px solid var(--smltext);
+  }
+
+  .overlay {
+    margin: 5% 2.5% 0;
+    opacity: 0.85;
+    border: 2px solid var(--maintxt);
+    margin-bottom: 0;
+  }
+
+  .text-flex {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: flex-start;
+  }
+
+}
+
 
 @media only screen and (max-width: 800px) {
   .vertical-scroller {
@@ -434,6 +508,7 @@ footer p {
   .text-flex {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    justify-content: flex-start;
   }
 
   .coding-lang {
@@ -447,8 +522,78 @@ footer p {
     font-size: 700%;
   }
 
+  .git-hub-logo-sml {
+    height: 2rem;
+  }
+
   .final-panel {
     width: 85vw;
     margin-left: 15vw;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .vertical-scroller {
+    scroll-snap-type: y proximity;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  .landing {
+    height: 125vh;
+  }
+
+  .arrow {
+    left: 50%;
+    margin-left: -20px;
+    bottom: 10rem;
+  }
+
+  .ident {
+    top: 10vh;
+  }
+
+  .project {
+    position: relative;
+    height: 60vh;
+  }
+
+  .project-image {
+    border: 2px solid var(--smltext);
+  }
+
+  .overlay {
+    margin: 30% 2.5% 0;
+    opacity: 0.85;
+    border: 2px solid var(--maintxt);
+  }
+
+  .text-flex {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: flex-start;
+  }
+
+  .coding-lang {
+    width: 90vw;
+    margin-left: 10vw;
+    height: 85vh;
+  }
+
+  #coding-lang-wrapper i {
+    margin: 2.5vw;
+    font-size: 700%;
+  }
+
+  .git-hub-logo-sml {
+    height: 2rem;
+  }
+
+  .final-panel {
+    width: 85vw;
+    margin-left: 15vw;
+  }
+}
+
