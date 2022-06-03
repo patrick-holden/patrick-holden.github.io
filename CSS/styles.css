@@ -410,13 +410,6 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 1400px) {
-  .project {
-    position: relative;
-    width: 45%;
-  }
-}
-
 @media only screen and (max-width: 1100px) {
   #portfolio-panel {
     width: 95vw;
@@ -432,8 +425,7 @@ footer p {
   }
 
   .project {
-    position: relative;
-    height: 60vh;
+    height: 50vh;
   }
 
   .project-image {
@@ -441,7 +433,8 @@ footer p {
   }
 
   .overlay {
-    margin: 5% 2.5% 0;
+    position: absolute;
+    margin: 30% 2.5% 0;
     opacity: 0.85;
     border: 2px solid var(--maintxt);
     margin-bottom: 0;
@@ -483,17 +476,12 @@ footer p {
   }
 
   #portfolio-flex {
-    margin-top: 5rem;
+    margin-top: 2.5rem;
     margin-left: 0.5rem;
     gap: 2.5rem;
     width: 400vw;
     flex-flow: row nowrap;
     overflow-x: scroll;
-  }
-
-  .project {
-    position: relative;
-    height: 60vh;
   }
 
   .project-image {
@@ -556,11 +544,6 @@ footer p {
     top: 10vh;
   }
 
-  .project {
-    position: relative;
-    height: 60vh;
-  }
-
   .project-image {
     border: 2px solid var(--smltext);
   }
@@ -595,5 +578,15 @@ footer p {
   .final-panel {
     width: 85vw;
     margin-left: 15vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .project {
+    height: 70vh;
+  }
+
+  .overlay {
+    margin: 10% 2.5% 0;
   }
 }

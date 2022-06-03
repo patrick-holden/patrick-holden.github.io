@@ -14,7 +14,7 @@ function script(){
 }
 
 function showText1(){
-    document.getElementById("hover-wine").innerHTML =
+  document.getElementById("hover-wine").innerHTML =
       '<div class="overlay">' +
       '<div class="text-flex">' +
       '<div>' +
@@ -24,12 +24,10 @@ function showText1(){
       '<div>' +
       '<p class="project-desc">My first site built using PHP, with a 7 table many-to-many MySQL database on the back-end; a simple insert form for new entries is validated against malicious injection.</p>' +
       '</div>' +
-      '<div>' +
       '<div class="github-live-links">' +
         '<a href="https://github.com/patrick-holden/collection" target="_blank">' +
           '<img src="./Images/GitHub-Mark-Light-120px-plus.png" class="github-live-logo-sml" alt="A link to my projects listed GitHub">' +
         '</a>' +
-      '</div>' +
       '</div>' +
       '<div class="project-competencies">' +
       '<h4>Competencies:</h4>' +
