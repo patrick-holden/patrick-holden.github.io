@@ -5,7 +5,7 @@ window.addEventListener('resize', function(event){
 });
 
 function script(){
-  if (window.innerWidth < 800) {
+  if (window.innerWidth < 900) {
     showText1();
     showText2();
     showText3();
@@ -15,7 +15,7 @@ function script(){
 
 function showText1(){
   document.getElementById("hover-wine").innerHTML =
-      '<div class="overlay">' +
+  '<div class="overlay">' +
       '<div class="text-flex">' +
       '<div>' +
         '<h4 class="project-title">\'VinoVero\'</h4>' +
@@ -28,7 +28,7 @@ function showText1(){
         '<a href="https://github.com/patrick-holden/collection" target="_blank">' +
           '<img src="./Images/GitHub-Mark-Light-120px-plus.png" class="github-live-logo-sml" alt="A link to my projects listed GitHub">' +
         '</a>' +
-      '</div>' +
+      '</div>'+
       '<div class="project-competencies">' +
       '<h4>Competencies:</h4>' +
       '<ul class="project-competencies-list">' +
@@ -95,7 +95,7 @@ function showText3(){
       '<p class="project-text">A Food Delivery App (react.js)</p>' +
     '</div>' +
     '<div>' +
-    '<p class="project-desc">A bootstrap-styled food delivery app, created in react, using an asynchronous fetch to access an API, object destructing to distribute through the component tree, ultimately placing an order via POST request.</p>' +
+    '<p class="project-desc">A bootstrap-styled food delivery app, created in react, using an asynchronous fetch to access an API, object destructing to distribute through the component tree, handling orders via POST request.</p>' +
     '</div>' +
     '<div class="github-live-links">' +
       '<div class="github-links">' +

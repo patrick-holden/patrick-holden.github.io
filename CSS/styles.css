@@ -161,7 +161,7 @@ main {
   height: 85vh;
   width: 94vw;
   margin-left: 5vw;
-  padding-bottom: 2.5vh;
+  padding-bottom: 1vh;
   overflow: auto;
   background-color: var(--bkgrnd);
   border-top: 2px solid var(--mainborders);
@@ -260,17 +260,51 @@ main {
 .github-live-logo-sml {
   z-index: 1000;
   height: 1.5rem;
+  color: #ffffff;
 }
 
 .live-site-logo-sml {
   z-index: 1000;
   height: 1.5rem;
+  color: #ffffff;
   filter: invert(100%)
           sepia(150%)
           saturate(0%)
           hue-rotate(232deg)
           brightness(200%)
           contrast(102%);
+}
+
+.github-live-logo-phone {
+  display: none;
+}
+
+.live-site-logo-phone {
+  display: none;
+  filter: invert(100%)
+          sepia(150%)
+          saturate(0%)
+          hue-rotate(232deg)
+          brightness(200%)
+          contrast(102%);
+}
+
+#portfolio-link-flex {
+  position: relative;
+  margin-left: 6%;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  /* width: 200vw; */
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2.5rem;
+}
+
+.project-link {
+  position: relative;
+  width: 45%;
+  overflow: hidden;
+  /*border: 2px solid red;*/
 }
 
 .coding-lang {
@@ -410,7 +444,7 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1000px) {
   #portfolio-panel {
     width: 95vw;
   }
@@ -448,7 +482,7 @@ footer p {
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .vertical-scroller {
     scroll-snap-type: y proximity;
   }
@@ -471,93 +505,57 @@ footer p {
     top: 10vh;
   }
 
-  #portfolio-panel {
-    width: 95vw;
+  .project-image {
+    border: 2px solid var(--smltext);
   }
 
-  #portfolio-flex {
-    margin-top: 2.5rem;
-    margin-left: 0.5rem;
-    gap: 2.5rem;
-    width: 400vw;
+  .overlay {
+    margin: 20% 2.5% 0;
+    opacity: 0.85;
+    border: 2px solid var(--maintxt);
+  }
+
+  .text-flex {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: flex-start;
+  }
+
+  .github-live-logo-sml {
+    display: none;
+  }
+
+  .live-site-logo-sml {
+    display: none;
+  }
+
+  #portfolio-link-flex {
+    position: relative;
+    margin-left: 6%;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    width: 300vw;
+    display: flex;
     flex-flow: row nowrap;
-    overflow-x: scroll;
+    gap: 4rem;
+  }
+  
+  .project-link {
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+    /*border: 2px solid red;*/
   }
 
-  .project-image {
-    border: 2px solid var(--smltext);
+  .github-live-logo-phone {
+    display: inline;
+    margin-left: 2px;
+    height: 1.5rem;
   }
 
-  .overlay {
-    margin: 30% 2.5% 0;
-    opacity: 0.85;
-    border: 2px solid var(--maintxt);
-  }
-
-  .text-flex {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    justify-content: flex-start;
-  }
-
-  .coding-lang {
-    width: 90vw;
-    margin-left: 10vw;
-    height: 85vh;
-  }
-
-  #coding-lang-wrapper i {
-    margin: 2.5vw;
-    font-size: 700%;
-  }
-
-  .git-hub-logo-sml {
-    height: 2rem;
-  }
-
-  .final-panel {
-    width: 85vw;
-    margin-left: 15vw;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .vertical-scroller {
-    scroll-snap-type: y proximity;
-  }
-
-  #logo {
-    display: none;
-  }
-
-  .landing {
-    height: 125vh;
-  }
-
-  .arrow {
-    left: 50%;
-    margin-left: -20px;
-    bottom: 10rem;
-  }
-
-  .ident {
-    top: 10vh;
-  }
-
-  .project-image {
-    border: 2px solid var(--smltext);
-  }
-
-  .overlay {
-    margin: 30% 2.5% 0;
-    opacity: 0.85;
-    border: 2px solid var(--maintxt);
-  }
-
-  .text-flex {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    justify-content: flex-start;
+  .live-site-logo-phone {
+    display: inline;
+    height: 1.5rem;
   }
 
   .coding-lang {
