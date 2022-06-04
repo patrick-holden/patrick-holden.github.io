@@ -12,6 +12,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 12px;
   /* overflow-x: hidden; */
 }
 
@@ -86,7 +87,7 @@ main {
   background-color: var(--bkgrnd);
 }
 
-.vertical-scroller {
+#vertical-scroller {
   height: 85vh;
   overflow-y: scroll;
   scroll-snap-type: y proximity;
@@ -459,7 +460,7 @@ footer p {
   }
 
   .project {
-    height: 50vh;
+    height: 60vh;
   }
 
   .project-image {
@@ -483,7 +484,7 @@ footer p {
 }
 
 @media only screen and (max-width: 900px) {
-  .vertical-scroller {
+  #vertical-scroller {
     scroll-snap-type: y proximity;
   }
 
@@ -510,7 +511,7 @@ footer p {
   }
 
   .overlay {
-    margin: 20% 2.5% 0;
+    margin: 40% 2.5% 0;
     opacity: 0.85;
     border: 2px solid var(--maintxt);
   }
@@ -581,10 +582,10 @@ footer p {
 
 @media only screen and (max-width: 400px) {
   .project {
-    height: 70vh;
+    height: 65vh;
   }
 
   .overlay {
-    margin: 10% 2.5% 0;
+    margin: 50% 2.5% 0;
   }
 }

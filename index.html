@@ -18,14 +18,13 @@
   <nav>
     <ul>
       <li><a href="http://www.github.com/patrick-holden"><img src="./Images/Git-Hub-ident-trans.png" id="logo" alt="A link to my GitHub account"></a></li>
-      <li><a href="#portfolio-panel">Portfolio</a></li>
+      <li><a a href="#" onclick="scrolly()">Portfolio</a></li>
       <li><a href="mailto:patrickholden.dev@gmail.com" target="_blank">Email</a></li>
       <li id="cv"><a href="./docs/PatrickHoldenCV.pdf" download>Download CV</a></li>
     </ul>
   </nav>
 </header>
-
-<main class="vertical-scroller">
+<main id="vertical-scroller">
   <section class="landing">
     <div class="ident">
       <p>Hi, I'm</p>
@@ -186,6 +185,17 @@
     </div>
   </div>
 </footer>
+
+<script>function scrolly(){
+  console.log('clicked');
+  console.log(document.getElementById("vertical-scroller").scrollTop);
+  let element = document.getElementById("vertical-scroller").scrollTop;
+  element.scrollTo({
+    top: 1166,
+    behavior: "smooth"
+  });
+  console.log(document.getElementById("vertical-scroller").scrollTop);
+}</script>
 </body>
 
 </html>

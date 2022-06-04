@@ -1,8 +1,19 @@
 window.addEventListener('resize', function(event){
-  var newWidth = window.innerWidth;
-  var newHeight = window.innerHeight;
+  let newWidth = window.innerWidth;
+  let newHeight = window.innerHeight;
+  console.log(document.getElementById("vertical-scroller").scrollTop);
   console.log(newWidth, newHeight);
 });
+
+function scroll(){
+  console.log('clicked');
+  // let element = document.getElementById("vertical-scroller");
+  // element.scrollIntoView({
+  //   block: 'start',
+  //   behavior: 'smooth',
+  //   inline: 'start'
+  // });
+}
 
 function script(){
   if (window.innerWidth < 900) {
