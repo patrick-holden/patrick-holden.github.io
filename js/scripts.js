@@ -1,4 +1,5 @@
 window.addEventListener('resize', function(event){
+  location.reload();
   let newWidth = window.innerWidth;
   let newHeight = window.innerHeight;
   console.log(document.getElementById("vertical-scroller").scrollTop);
