@@ -5,16 +5,6 @@ window.addEventListener('resize', function(event){
   console.log(newWidth, newHeight);
 });
 
-function scroll(){
-  console.log('clicked');
-  // let element = document.getElementById("vertical-scroller");
-  // element.scrollIntoView({
-  //   block: 'start',
-  //   behavior: 'smooth',
-  //   inline: 'start'
-  // });
-}
-
 function script(){
   if (window.innerWidth < 900) {
     showText1();
