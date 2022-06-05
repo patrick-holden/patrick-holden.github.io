@@ -7,7 +7,10 @@ window.addEventListener('resize', function(event){
 });
 
 function script(){
-  if (window.innerWidth < 900) {
+  if ((window.innerWidth < 900) ||
+      ('ontouchstart' in window) ||  
+      (navigator.maxTouchPoints > 0) ||  
+      (navigator.msMaxTouchPoints > 0)) {
     showText1();
     showText2();
     showText3();
