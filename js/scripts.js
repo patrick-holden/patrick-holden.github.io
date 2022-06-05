@@ -24,7 +24,7 @@ function showText1(){
       '<div class="text-flex">' +
       '<div>' +
         '<h4 class="project-title">\'VinoVero\'</h4>' +
-        '<p class="project-text">A Wine Collection App Built With PHP</p>' +
+        '<p class="project-summary">A Wine Collection App Built With PHP</p>' +
       '</div>' +
       '<div>' +
       '<p class="project-desc">My first site built using PHP, with a 7 table many-to-many MySQL database on the back-end; a simple insert form for new entries is validated against malicious injection.</p>' +
@@ -56,7 +56,7 @@ function showText2(){
     '<div class="text-flex">' +
     '<div>' +
       '<h4 class="project-title">\'CarPe - Diem\'</h4>' +
-      '<p class="project-text">An OOP Car Collection App</p>' +
+      '<p class="project-summary">An OOP Car Collection App</p>' +
     '</div>' +
     '<div>' +
     '<p class="project-desc">Built in OOP, with hydrators, the singleton pattern, and a Data Access Layer, I added a search function, allowing partial searches and protecting against malicious injection via both Regex and prepared statements.</p>' +
@@ -97,7 +97,7 @@ function showText3(){
     '<div class="text-flex">' +
     '<div>' +
       '<h4 class="project-title">\'ScranMaster\'</h4>' +
-      '<p class="project-text">A Food Delivery App (react.js)</p>' +
+      '<p class="project-summary">A Food Delivery App (react.js)</p>' +
     '</div>' +
     '<div>' +
     '<p class="project-desc">A bootstrap-styled food delivery app, created in react, using an asynchronous fetch to access an API, object destructing to distribute through the component tree, handling orders via POST request.</p>' +
@@ -138,7 +138,7 @@ function showText4(){
     '<div class="text-flex">' +
     '<div>' +
       '<h4 class="project-title">\'WordRunner\'</h4>' +
-      '<p class="project-text">JavaScript Wordguessing Game</p>' +
+      '<p class="project-summary">JavaScript Wordguessing Game</p>' +
     '</div>' +
     '<div>' +
     '<p class="project-desc">A simple game made with vanilla JavaScript, and built in a six person scrum team; the app uses a JSON fetch request, to display synonyms so players can attempt to guess the next word.</p>' +

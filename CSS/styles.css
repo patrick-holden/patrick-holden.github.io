@@ -12,7 +12,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 body {
@@ -207,6 +207,7 @@ main {
 }
 
 .text-flex {
+  font-family: Arial, Helvetica, sans-serif;
   margin-left: 2rem;
   display: flex;
   flex-flow: column nowrap;
@@ -223,7 +224,7 @@ main {
   text-transform: uppercase;
 }
 
-.project-text {
+.project-summary {
   color: var(--maintxt);
   font-weight: 400;
 }
