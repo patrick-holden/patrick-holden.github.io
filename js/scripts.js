@@ -69,7 +69,7 @@ function showText2(){
       '</div>' +
       '<div class="live-links">' +
         '<a href="https://dev.io-academy.uk/projects/2022-march/2022-mar-carcollection/index.php" target="_blank">' +
-          '<img src="./Images/live-site.svg" class="live-site-logo-sml" alt="A link to the live hosting of my car collection OOP build, CarPe-Diem">' +
+          '<img src="./Images/white-live-button.png" class="live-site-logo-sml" alt="A link to the live hosting of my car collection OOP build, CarPe-Diem">' +
         '</a>' +
       '</div>' +
     '</div>' +
@@ -110,7 +110,7 @@ function showText3(){
       '</div>'+
       '<div class="live-links">' +
         '<a href="https://2022-mar-scranmaster.dev.io-academy.uk/" target="_blank">' +
-          '<img src="./Images/live-site.svg" class="live-site-logo-sml" alt="A link to the live hosting of my Food Delivery build in react.js, which we called Scran-Master, internally">' +
+          '<img src="./Images/white-live-button.png" class="live-site-logo-sml" alt="A link to the live hosting of my Food Delivery build in react.js, which we called Scran-Master, internally">' +
         '</a>' +
       '</div>' +
     '</div>' +
@@ -151,7 +151,7 @@ function showText4(){
       '</div>' +
       '<div class="live-links">' +
         '<a href="https://dev.io-academy.uk/projects/2022-march/wordrunner/" target="_blank">' +
-          '<img src="./Images/live-site.svg" class="live-site-logo-sml" alt="A link to the live hosting of my Food Delivery build in react.js, which we called Scran-Master, internally">' +
+          '<img src="./Images/white-live-button.png" class="live-site-logo-sml" alt="A link to the live hosting of my Food Delivery build in react.js, which we called Scran-Master, internally">' +
         '</a>' +
       '</div>' +
     '</div>' +
