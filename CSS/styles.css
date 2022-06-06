@@ -10,9 +10,9 @@
   --smltext: #da5bda;
 }
 
-html {
+* {
   box-sizing: border-box;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 body {
@@ -26,10 +26,6 @@ body {
 
 body::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
 }
 
 nav {
@@ -169,6 +165,7 @@ main {
 
 #portfolio-panel h2 {
   height: 2.5rem;
+  font-size: 1.5rem;
   text-align: left;
   margin-left: 7.5vw;
   color: var(--smltext);
@@ -320,6 +317,7 @@ main {
 
 .coding-lang h2 {
   height: 2.5rem;
+  font-size: 1.5rem;
   text-align: left;
   padding-left: 5vw;
   padding-bottom: 2.5rem;
@@ -360,6 +358,7 @@ main {
 
 .final-panel h2 {
   height: 2.5rem;
+  font-size: 1.5rem;
   text-align: left;
   padding-left: 5vw;
   padding-bottom: 2.5rem;
